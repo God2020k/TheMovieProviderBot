@@ -64,7 +64,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-      m=await message.reply_text("<b>𝑻𝒉𝒂𝒍𝒂𝒑𝒂𝒕𝒉𝒚</b>")
+        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ ʙᴏᴛ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
         await asyncio.sleep(0.5)
         await m.edit_text("⚡")       
         m=await message.reply_sticker("CAACAgUAAxkBAAELgNdlB9VIBq9i9njdcqJFlzPWeiM0vAACHAEAAm7AyFU4BjEVKEWwEh4E")  
