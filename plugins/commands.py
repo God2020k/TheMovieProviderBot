@@ -128,7 +128,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_text("<b>𝑻𝒉𝒂𝒍𝒂𝒑𝒂𝒕𝒉𝒚</b>")
+        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ ʙᴏᴛ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
         await asyncio.sleep(0.5)
         await m.edit_text("⚡")       
         m=await message.reply_sticker("CAACAgUAAxkBAAELgNdlB9VIBq9i9njdcqJFlzPWeiM0vAACHAEAAm7AyFU4BjEVKEWwEh4E")  
@@ -141,9 +141,9 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return  
-        if len(message.command) == 2 and message.command[1] in ["Another"]:
+       if len(message.command) == 2 and message.command[1] in ["premium"]:
         buttons = [[
-                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
+                    InlineKeyboardButton('📲 ꜱᴇɴᴅ', user_id=int(5211097531))
                   ],[
                     InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
                   ]]
@@ -154,7 +154,7 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        return 
+        return   
     data = message.command[1]
     try:
         pre, file_id = data.split('_', 1)
